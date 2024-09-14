@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="https://kit.fontawesome.com/d77bc12c44.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+    </head>
+    <body>
+      <script src="./assets/js/main.js"></script>
+      <header>
+          <section class = "header2">
+              <img class = "headLogo" src = "./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+              <ul class = "navbar">
+                  <li><a href="./contactUs.html">Contact Us</a></li>
+                  <li><a href="./aboutus.html">About Us</a></li>
+                  <li><a href="./products.html">Products</a></li>
+                  <li><a href="./index.html">Home</a></li>
+              </ul>
+          </section>
+          <section class ="mobile-header">
+            <img class = "header-img" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+            <img onclick = 'menuAppear()' class = "toggle" src = "./assets/images/togglemenu.png">
+        </section>
+      </header>
+        <main>
+            <div class = "last-test">
+                <nav class="category-menu">
+                    <ul class="category-list">
+                        <li class="category-item"><a href="#" class="category-link" data-category="category1">All products</a></li>
+                        <li class="category-item"><a href="#" class="category-link" data-category="category2">Gear Motors</a></li>
+                        <li class="category-item"><a href="#" class="category-link" data-category="category3">Frequency inverters</a></li>
+                        <li class="category-item"><a href="#" class="category-link" data-category="category4">Servo drive systems</a></li>
+                        <li class="category-item"><a href="#" class="category-link" data-category="category5">Decentralized drive systems</a></li>
+                        <li class="category-item"><a href="#" class="category-link" data-category="category6">Industrial gear units</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class = "cat-menu">
+                <section>
+                    <div class = "mobile-menu-header">
+                        <img class = "toggle-menu-logo" src = "./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+                        <a onclick = 'catRemoved()'><img class = "closing" src = "./assets/images/closeMenu.png"></a>
+                    </div>
+                </section>
+                <nav class = "category-menu">
+                    <ul class="category-list">
+                        <li class="category-item"><a href="#" class="category-link" data-category="category1">All products</a></li>
+                        <li class="category-item"><a href="#" class="category-link" data-category="category2">Gear Motors</a></li>
+                        <li class="category-item"><a href="#" class="category-link" data-category="category3">Frequency inverters</a></li>
+                        <li class="category-item"><a href="#" class="category-link" data-category="category4">Servo drive systems</a></li>
+                        <li class="category-item"><a href="#" class="category-link" data-category="category5">Decentralized drive systems</a></li>
+                        <li class="category-item"><a href="#" class="category-link" data-category="category6">Industrial gear units</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class = "button-placing">
+                <a onclick = 'catAppear()' class ="category-button">Categories</a>
+            </div>
+            <div class="product-display">
+            </div>
+            <script>
+function catRemoved(){
+    let x = document.getElementsByClassName('cat-menu')[0];
+    x.style.right = '-100%';
+};
+
+function catAppear(){
+    let x = document.getElementsByClassName('cat-menu')[0];
+    x.style.right = '0%';
+};
+
+const products = {
+    category1: [
+        { name: "Product 1", image: "./assets/images/Helical-Gear-Unit-R-series-e1568452698513.png", link: "https://www.seweurodrive.com/products/gear_units/standard_gear_units/parallel-shaft_helical_gear_units_f/parallel-shaft_helical_gear_units_f.html" },
+        { name: "Product 1", image: "./assets/images/0283_03.jpg", link: "product1.html" },
+        { name: "Product 1", image: "./assets/images/Helical-Gear-Unit-R-series-e1568452698513.png", link: "product1.html" },
+        { name: "Product 1", image: "./assets/images/Helical-Gear-Unit-R-series-e1568452698513.png", link: "product1.html" },
+        { name: "Product 1", image: "./assets/images/Helical-Gear-Unit-R-series-e1568452698513.png", link: "product1.html" }
+    ],
+    category2: [
+        { name: "Product 3", image: "./assets/images/Helical-Gear-Unit-R-series-e1568452698513.png", link: "product1.html" },
+        { name: "Product 4", image: "./assets/images/0283_03.jpg", link: "product1.html" }
+    ],
+    category3: [
+        { name: "Product 5", image: "image5.jpg", link: "product5.html" },
+        { name: "Product 6", image: "image6.jpg", link: "product6.html" }
+    ],
+    category4: [
+        { name: "Product 7", image: "image7.jpg", link: "product7.html" },
+        { name: "Product 8", image: "image8.jpg", link: "product8.html" }
+    ],
+    category5: [
+        { name: "Product 9", image: "image9.jpg", link: "product9.html" },
+        { name: "Product 10", image: "image10.jpg", link: "product10.html" }
+    ],
+    category6: [
+        { name: "Product 11", image: "image11.jpg", link: "product11.html" },
+        { name: "Product 12", image: "image12.jpg", link: "product12.html" }
+    ]
+};
+
+let categoryMenu = document.querySelector('.category-menu');
+const productDisplay = document.querySelector('.product-display');
+
+categoryMenu.addEventListener('click', function(event) {
+    event.preventDefault();
+    const category = event.target.getAttribute('data-category');
+    if (category) {
+        displayProducts(category);
+    }
+});
+
+function displayProducts(category) {
+    productDisplay.innerHTML = '';
+    products[category].forEach(product => {
+        const productItem = document.createElement('div');
+        productItem.className = 'product-item';
+        productItem.innerHTML = `
+            <a href="${product.link}">
+                <img src="${product.image}" alt="${product.name}" />
+                <h3>${product.name}</h3>
+            </a>
+        `;
+        productDisplay.appendChild(productItem);
+    });
+}
+
+let categoryMe = document.querySelector('.cat-menu');
+const productDis = document.querySelector('.product-display');
+
+categoryMe.addEventListener('click', function(event) {
+    event.preventDefault();
+    const category = event.target.getAttribute('data-category');
+    if (category) {
+        displayProducts(category);
+        catRemoved();
+    }
+});
+
+function displayProducts(category) {
+    productDis.innerHTML = '';
+    products[category].forEach(product => {
+        const productItem = document.createElement('div');
+        productItem.className = 'product-item';
+        productItem.innerHTML = `
+            <a href="${product.link}">
+                <img src="${product.image}" alt="${product.name}" />
+                <h3>${product.name}</h3>
+            </a>
+        `;
+        productDisplay.appendChild(productItem);
+    });
+}
+
+displayProducts('category1');
+            </script>
+        </main>
+
+     
+<footer id="fff">
+   <section class="footer1">
+       <img class="footerLogo" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+       <div style="margin-top:4%;">
+           <p style="font-weight: bold;">Delivering Excellence since 1924.</p>
+           <p>SEW-EURODRIVE: Leading Drive Solutions of the world.</p>
+       </div>
+   </section>
+   <section class="footer2">
+       <div class="footerInfo">
+           <i class="fa-solid fa-location-dot"></i>
+           <p>Acar Group Building, Dahr El Jamal Street, <br>SIN EL-FIL, Industrial Zone, Metn, LEBANON</p>
+       </div>
+       <div class="footerInfo">
+           <i class="fa-solid fa-phone"></i>
+           <p>+961 1 494786 | +961 1 494971 <br>+961 1 498272 | +961 1 510532</p>
+       </div>
+   </section>
+   <section class="mobile-footer">
+       <img class="footerLogo" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+       <div style="margin-top:4%;">
+           <p style="font-weight: bold;">Delivering Excellence since 1924.</p>
+           <p>SEW-EURODRIVE: Leading Drive Solutions of the world.</p>
+       </div>
+       <div class="footerInfo">
+           <i class="fa-solid fa-location-dot"></i>
+           <p>Acar Group Building, Dahr El Jamal Street, <br>SIN EL-FIL, Industrial Zone, Metn, LEBANON</p>
+       </div>
+       <div class="footerInfo">
+           <i class="fa-solid fa-phone"></i>
+           <p>+961 1 494786 | +961 1 494971 <br>+961 1 498272 | +961 1 510532</p>
+       </div>
+   </section>
+ </footer>
+ 
+ <section class="credits">
+   <p>© 2019. Developed by Anthony Labaki</p>
+ </section>
+ 
+ <section class="mobile-menu">
+   <section>
+       <div class="mobile-menu-header">
+           <img class="toggle-menu-logo" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+           <a onclick="menuRemoved()"><img class="closing" src="./assets/images/closeMenu.png"></a>
+       </div>
+   </section>
+   <section>
+       <ul class="menu-cat">
+           <li><a href="./index.html">Home</a></li>
+           <li><a href="./products.html">Products</a></li>
+           <li><a href="./aboutus.html">Contact Us</a></li>
+           <li><a href="./contactUs.html">About Us</a></li>
+       </ul>
+   </section>
+ </section>
+ </body>
+ </html>
+ 

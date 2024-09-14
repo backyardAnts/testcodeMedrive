@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d77bc12c44.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+</head>
+<body>
+  <script src="./assets/js/main.js"></script>
+    <header>
+        <section class = "header2">
+            <img class = "headLogo" src = "/assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+            <ul class = "navbar">
+                <li><a href="/contactUs.html">Contact Us</a></li>
+                <li><a href="/aboutus.html">About Us</a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li><a href="/index.html">Home</a></li>
+              </ul>
+        </section>
+        <section class="mobile-header">
+          <img class="header-img" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+          <img onclick='menuAppear()' class="toggle" src="./assets/images/togglemenu.png">
+      </section>
+    </header>
+</body>
+</html>
+
+<main>
+  <section class="main1">
+      <img class="introImg" src="./assets/images/2386_06.png">
+      <div class="insideImage">
+          <div>
+              <h1>DELIVERING EXCELLENCE 
+                  SINCE 1924
+              </h1>
+              <p>SEW-EURODRIVE: Leading Drive Solutions of the world.</p>
+          </div>
+      </div>
+  </section>
+
+  <section class="mainProducts">
+      <h2>Products</h2>
+      <p class="underTitle">SEW-EURODRIVE</p>
+      <div class="carousel-container">
+          <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+
+          <div class="carousel">
+              <div class="product-slide">
+                  <img src="./assets/images/Helical-Gear-Unit-R-series-e1568452698513.png" alt="Product 1" class="product-image">
+                  <p class="product-description">This is Product 1.</p>
+              </div>
+              <div class="product-slide">
+                  <img src="./assets/images/0283_03.jpg" alt="Product 2" class="product-image">
+                  <p class="product-description">This is Product 2.</p>
+              </div>
+              <div class="product-slide">
+                  <img src="./assets/images/2386_06.png" alt="Product 3" class="product-image">
+                  <p class="product-description">This is Product 3.</p>
+              </div>
+              <div class="product-slide">
+                  <img src="./assets/images/0552_03.jpg" alt="Product 4" class="product-image">
+                  <p class="product-description">This is Product 4.</p>
+              </div>
+              <div class="product-slide">
+                  <img src="./assets/images/product5.jpg" alt="Product 5" class="product-image">
+                  <p class="product-description">This is Product 5.</p>
+              </div>
+              <div class="product-slide">
+                  <img src="./assets/images/product6.jpg" alt="Product 6" class="product-image">
+                  <p class="product-description">This is Product 6.</p>
+              </div>
+          </div>
+
+          <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+      </div>
+
+      <script>
+          let currentIndex = 0;
+
+          function moveCarousel(direction) {
+              const slides = document.querySelectorAll('.product-slide');
+              const totalSlides = slides.length;
+              const visibleSlides = 4;
+
+              currentIndex += direction * visibleSlides;
+              if (currentIndex >= totalSlides) {
+                  currentIndex = 0;
+              } else if (currentIndex < 0) {
+                  currentIndex = Math.max(0, totalSlides - visibleSlides);
+              }
+
+              const offset = -currentIndex * (100 / visibleSlides);
+              document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+          }
+      </script>
+  </section>
+
+  <section class="mainProductsPhone">
+      <h2>Products</h2>
+      <p class="underTitlePhone">SEW-EURODRIVE</p>
+      <div class="carousel-containerPhone">
+          <div class="carouselPhone">
+              <div class="product-slidePhone">
+                  <img src="./assets/images/Helical-Gear-Unit-R-series-e1568452698513.png" alt="Product 1" class="product-image">
+                  <p class="product-description">This is Product 1.</p>
+              </div>
+              <div class="product-slidePhone">
+                  <img src="./assets/images/0283_03.jpg" alt="Product 2" class="product-image">
+                  <p class="product-description">This is Product 2.</p>
+              </div>
+              <div class="product-slidePhone">
+                  <img src="./assets/images/2386_06.png" alt="Product 3" class="product-image">
+                  <p class="product-description">This is Product 3.</p>
+              </div>
+              <div class="product-slidePhone">
+                  <img src="./assets/images/0552_03.jpg" alt="Product 4" class="product-image">
+                  <p class="product-description">This is Product 4.</p>
+              </div>
+              <div class="product-slidePhone">
+                  <img src="./assets/images/product5.jpg" alt="Product 5" class="product-image">
+                  <p class="product-description">This is Product 5.</p>
+              </div>
+              <div class="product-slidePhone">
+                  <img src="./assets/images/product6.jpg" alt="Product 6" class="product-image">
+                  <p class="product-description">This is Product 6.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="main3">
+      <div class="aboutPara">
+          <img src="./assets/images/gears2024-08-30 092246.png">
+          <div class="aboutParaa">
+              <h2>About Us</h2>
+              <p>
+                  Founded in 1924, Joubran Acar Ets. began by importing industrial supplies. In 1933, it became Joubran Acar & Fils, adding a mechanical workshop and representing international electromechanical brands in Lebanon. <br><br>In 1970, the company became a limited liability firm and secured exclusive rights to SEW-EURODRIVE products. In 2008, Middle-East Drives SAL (Offshore) was created to expand into the Middle East, quickly gaining the trust of Arab customers.
+              </p>
+              <a>Read More</a>
+          </div>
+      </div>
+  </section>
+
+  <section style="margin-bottom:5%" class="main3Phone">
+      <div class="aboutParaPhone">
+          <div class="aboutParaaPhone">
+              <h2>About Us</h2>
+              <p>
+                  Founded in 1924, Joubran Acar Ets. began by importing industrial supplies. In 1933, it became Joubran Acar & Fils, adding a mechanical workshop and representing international electromechanical brands in Lebanon. <br><br>In 1970, the company became a limited liability firm and secured exclusive rights to SEW-EURODRIVE products. In 2008, Middle-East Drives SAL (Offshore) was created to expand into the Middle East, quickly gaining the trust of Arab customers.
+              </p>
+              <a class="phone-more">Read More</a>
+          </div>
+      </div>
+  </section>
+
+  <section class="beforeFooter">
+      <p style="margin-right: 5%;">OUR CONSULTANTS ARE ALWAYS READY TO HELP YOU!</p>
+      <p style="margin-left:50px;"><a href="./products.html">Product Inquiry</a></p>
+  </section>
+</main>
+
+<footer id="ff">
+  <section class="footer1">
+      <img class="footerLogo" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+      <div style="margin-top:4%;">
+          <p style="font-weight: bold;">Delivering Excellence since 1924.</p>
+          <p>SEW-EURODRIVE: Leading Drive Solutions of the world.</p>
+      </div>
+  </section>
+  <section class="footer2">
+      <div class="footerInfo">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Acar Group Building, Dahr El Jamal Street, <br>SIN EL-FIL, Industrial Zone, Metn, LEBANON</p>
+      </div>
+      <div class="footerInfo">
+          <i class="fa-solid fa-phone"></i>
+          <p>+961 1 494786 | +961 1 494971 <br>+961 1 498272 | +961 1 510532</p>
+      </div>
+  </section>
+  <section class="mobile-footer">
+      <img class="footerLogo" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+      <div style="margin-top:4%;">
+          <p style="font-weight: bold;">Delivering Excellence since 1924.</p>
+          <p>SEW-EURODRIVE: Leading Drive Solutions of the world.</p>
+      </div>
+      <div class="footerInfo">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Acar Group Building, Dahr El Jamal Street, <br>SIN EL-FIL, Industrial Zone, Metn, LEBANON</p>
+      </div>
+      <div class="footerInfo">
+          <i class="fa-solid fa-phone"></i>
+          <p>+961 1 494786 | +961 1 494971 <br>+961 1 498272 | +961 1 510532</p>
+      </div>
+  </section>
+</footer>
+
+<section class="credits">
+  <p>© 2019. Developed by Anthony Labaki</p>
+</section>
+
+<section class="mobile-menu">
+  <section>
+      <div class="mobile-menu-header">
+          <img class="toggle-menu-logo" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+          <a onclick="menuRemoved()"><img class="closing" src="./assets/images/closeMenu.png"></a>
+      </div>
+  </section>
+  <section>
+      <ul class="menu-cat">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./aboutus.html">Contact Us</a></li>
+          <li><a href="./contactUs.html">About Us</a></li>
+      </ul>
+  </section>
+</section>
+</body>
+</html>

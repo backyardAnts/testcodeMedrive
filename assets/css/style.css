@@ -1,0 +1,910 @@
+body{
+    margin: 0%;
+    padding:0%;
+    font-family: 'Titillium Web';font-size: 22px;
+    margin-top: 1%;
+}
+.header1{
+    background-color: rgba(121, 124, 133, 1.00);
+    color: white;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.header2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-left:3%; margin-right: 3%;
+}
+.header2 img{
+  width: 90%;
+}
+.navbar{
+  margin-top:5%;
+  font-size: 23px;
+}
+.navbar li {
+  display:inline;
+  float: right;
+  margin-left:5%; margin-right:5%;
+}
+.navbar a{
+  text-decoration: none;
+  color:#444444;
+  font-weight: bold;
+}
+.navbar a:hover{
+  color: #0698d6;
+}
+.main1{
+    position: relative;
+    margin-top:2%;
+}
+.main2{
+    text-align: center;
+}
+.main3{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top:5%;
+}
+  .main1 img{
+    width: 100%;
+  }
+
+  .main1 h1{
+    padding: 5%;
+    font-size: 50px;
+    width:100%;
+  }
+.main1 strong{
+  margin-left: 4.5%;
+  font-size: 30px;
+}
+  .insideImage{
+    position: absolute;
+    top:50%;
+    color:white;
+    margin-left: 5%;
+
+  }
+  .insideImage p{
+    margin-top:0%;
+  }
+  .insideImage h1{
+    padding:0%;
+    margin:0%;
+  }
+.item{
+    margin-left:5%; margin-right: 5%;
+}
+.item img{
+    width:100%;
+}
+.contactmain1 img{
+  width: 100%;;
+}
+.info{
+  height:40px;
+}
+.contactmain2{
+  margin-top:5%; margin-left:5%; margin-right:5%;
+}
+.contactmain2 h2{
+  text-align: center;
+}
+.contactmain3{
+  margin-top:5%; margin-left:5%; margin-right:5%;
+}
+.mainProducts h2{
+  text-align: center;
+  font-weight: bold;
+  margin:0%;
+}
+.underTitle{
+  text-align: center;
+  font-size:15px;
+}
+.userInput{
+  display:grid;
+  grid-template-columns: 20% 60%;
+  column-gap: 10%;
+  background-color: #444444;
+  opacity: 0.9;
+  color: white;
+  width:80%;
+  margin-left:auto; margin-right: auto;
+  border-radius: 10px;
+
+}
+.contactmain3-phone{
+  background-color: #444444;
+  margin-left: 14%; margin-right: 14%; margin-top: 5%;
+  border-radius: 10px;
+  padding: 5%;
+  color:white;
+}
+.contactmain3-phone p{
+  font-size: 3vw;
+}
+.contactmain4 input{
+  border-radius: 5px;
+}
+.userInput img{
+  width:80%;
+}
+.userInput form{
+  margin-top:0%;
+}
+.submitPhrase{
+  display:grid;
+  grid-template-columns: 70% 30%;
+}
+.submitPhrase button{
+  background-color: #0698d6;
+  color:white;
+  font-weight: bold;
+  box-shadow: 0px 5px 5px rgb(58, 56, 56);
+  border-style: none;
+  height:50px;
+  width:100%;
+  border-radius: 5px;
+  margin-top: 8%; margin-left:10%;
+
+}
+.contactmain2-phone {
+  font-size: 3vw;
+}
+#final-edit{
+  background-color: #444444;
+}
+.contactmain4{
+  display:grid;
+  grid-template-columns: 20% 70%;
+  column-gap: 7%;
+  background-color: #0698d6;
+  margin-left: 14%; margin-right: 14%; margin-top: 5%;
+  border-radius: 10px;
+  padding: 5%;
+  color:white;
+
+}
+.contactmain4-phone p{
+  font-size: 3vw;
+}
+.contactmain4-phone{
+  background-color: #0698d6;
+  margin-left: 14%; margin-right: 14%; margin-top: 5%;
+  border-radius: 10px;
+  padding: 5%;
+  color:white;
+}
+
+.contactmain4 img{
+  width: 100%;
+}
+.contactmain4 p{
+  font-size: 15px;
+  text-align: center;
+}
+.userInput img{
+  margin-left:10%; margin-top:10%;
+}
+.informations {
+  margin-top:10%;
+}
+.informations input{
+  border-radius: 10px;
+}
+.Subject{
+  width: 100%;
+  height:40px;
+  margin-top: 4%;
+
+}
+.nameEmail{
+  width:100%;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 8px;;
+}
+#ff {
+  margin-top:5%;
+}
+.message{
+  width: 100%;
+  height: 100px;
+  margin-top: 4%;
+}
+#email{
+  margin-left: 3%;
+}
+.headInfo{
+  display:flex;
+  align-items: center;
+}
+.headInfo i {margin-right: 2%;
+}
+footer{
+    background-color:#444444;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    color:rgba(121, 124, 133, 1.00);
+    padding-top:2%; padding-left: 5%; padding-bottom:2%;
+
+    
+}
+
+.phone-more{
+  background-color: #0698d6;
+  font-size: 3vw;
+  padding:2%;
+  border-radius: 5px;
+}
+.footer2 h3{
+    color:white;
+    border-bottom-style: solid;
+    width: 20%;
+    padding-bottom: 2%;
+    border-color: #0698d6;
+}
+.footer1 p{
+  color:white;
+  padding:0%;
+  margin:0%;
+}
+iframe{
+  width:100%;
+  margin-top: 5%;
+}
+
+
+.introImg{
+  filter: brightness(50%);
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 90%; /* Adjust based on the width of 4 products */
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-slide {
+  min-width: 21%; /* Display 4 products at a time */
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  text-align: center;
+  margin-left: 2%; margin-right: 2%;
+  box-shadow: 0px 5px 5px rgb(58, 56, 56);
+  transition: 0.5s;
+}
+.product-slide:hover{
+  transform: scale(1.1); 
+}
+.product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #333;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  color: #444444;
+  font-size: 34px;
+  padding: 10px;
+  cursor: pointer;
+}
+.carousel-button:hover{
+  color: white;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.aboutPara{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.aboutParaa {
+  margin-top:5%;
+}
+.aboutParaa a{
+  background-color: #0698d6;
+  padding:10px;
+  border-radius: 5px;
+  color:white;
+  padding-left:5%;padding-right:5%;
+  box-shadow: 0px 5px 5px rgb(58, 56, 56);
+  font-weight: bold;
+
+}
+.aboutParaa p{
+  margin-bottom:5%;
+}
+
+
+.beforeFooter{
+  background-color:grey;
+  padding-top:10px; padding-bottom: 10px;
+  text-align: center;
+  display: flex;
+  margin-top:5%;
+}
+.beforeFooter p{
+  color:white;
+  margin-left:auto; margin-right:auto;
+}
+.beforeFooter a{
+  background-color: #0698d6;
+  padding: 15px;
+  font-weight: bold;
+  border-radius:10px;
+  padding-left:50px; padding-right: 50px;
+  box-shadow: 0px 5px 5px rgb(58, 56, 56);
+
+}
+.category-menu {
+  margin-top: 3%;;
+  background-color: #333;
+  padding-top: 2%; padding-bottom: 2%;
+  text-align: center; 
+}
+.category-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center; 
+  gap: 2%;
+}
+
+.category-link {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.category-link:hover {
+  background-color: #0698d6;
+}
+
+.product-display
+ {
+  margin-top: 5%; margin-left:5%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition:1s;
+}
+.product-item:hover{
+  scale:1.2;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  width: 300px;
+  text-align: center;
+  background-color: #fff;
+  transition:1s;
+}
+
+.product-item img {
+  width: 100%;
+  height: 200px;
+}
+
+.product-item a {
+  text-decoration: none;
+  color: inherit;
+}
+.product-item a:hover {
+  color:black;
+}
+
+.product-item a:hover h3 {
+  color: #007BFF;
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* The vertical line in the middle */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 67%;
+  background-color: #ccc;
+  z-index: 1;
+  margin-top: 9.2%;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px 0;
+  position: relative;
+}
+
+.timeline-item:nth-child(even) {
+  justify-content: flex-start;
+}
+
+.timeline-content {
+  width: 45%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2; /* Make sure the content is above the line */
+}
+
+
+/* Lines connecting to the middle line */
+.timeline-content.left::before,
+.timeline-content.right::before {
+  content: '';
+  position: absolute;
+  width: 3.5%;
+  height: 2px;
+  background-color: #ccc;
+  top: 30px;
+}
+
+.timeline-content.left::before {
+  right: 100%;
+}
+
+.timeline-content.right::before {
+  left: 100%;
+}
+
+.timeline-content.left::after {
+  left: -15px;
+}
+
+.timeline-content.right::after {
+  right: -15px;
+}
+
+.history h3 {
+  color: #007BFF;
+  margin: 0;
+  font-size: 24px;
+}
+
+.history h4 {
+  margin: 10px 0 10px;
+  font-size: 20px;
+}
+
+.history p {
+  margin: 0;
+}
+.history{
+  width:100%;
+  padding:0%;
+}
+
+
+.aboutSew{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-left:5%; margin-right: 10%;
+  column-gap: 5%;
+}
+.aboutSew h2{
+  font-weight:1000;
+}
+.aboutSew img{
+  padding-top: 20%;
+}
+
+.footerLogo{
+  width:60%;
+}
+.footerInfo{
+  display: flex;
+}
+.footerInfo{
+  margin-top: 10%;
+  color:white;
+}
+.footerInfo p {
+  margin-left:2%;
+}
+footer p{
+  margin:0%;
+}
+.cat-menu ul{
+  display:block;
+  background-color: none;
+}
+.cat-menu li{
+  color:white;
+  font-size: 20px;
+  margin-top: 10%;
+  border-bottom-style:solid ;
+}
+.cat-menu .category-menu{
+  background-color: white;
+}
+.credits{
+  background-color: grey;
+  color:white;
+  text-align: center;
+  width:100%;
+  margin:0px;
+}
+.credits p{
+  margin: 0px;
+}
+.allHeadInfo{
+  display:grid;
+  grid-template-columns: 40% 30% 20%;
+  column-gap: 5%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  box-shadow: 0px 5px 5px rgb(112, 107, 107);
+  border-radius: 10px;
+  padding-top:3%; padding-bottom:3%;
+  padding-left:2%;
+  font-size: large;
+}
+
+.mobile-header{
+  display:grid;
+  grid-template-columns: 40% 10%;
+  column-gap: 50%;
+}
+.header-img{
+  width:100%;
+}
+.toggle{
+  width: 80%;
+  margin-top: 30%;
+}
+
+.mobile-menu{
+  position: fixed;
+  top:0;
+  right: -100%;
+  z-index: 10000;
+  background-color: white;
+  width:100%;
+  transition: right 0.3s ease;
+  height: 100%;
+}
+.cat-menu{
+  color:black;
+  position: fixed;
+  top:0;
+  right: -100%;
+  z-index: 10000;
+  background-color: white;
+  width:100%;
+  transition: right 0.3s ease;
+  height: 100%;
+}
+.loler{
+  display: none;
+}
+.cat-menu a{
+  color: black;
+}
+.mobile-menu ul{
+  list-style-type: none;
+  padding: 0%;
+}
+.mobile-menu a{
+  color: black;
+}
+.mobile-menu li{
+  margin-top:20%; margin-left: 0%;
+  text-align: center;
+}
+.toggle-menu-logo{
+  width:50%;
+  margin-left:2%; margin-top:2%;
+}
+.closing{
+  float:right;
+  margin-top: 5%; margin-right: 5%;
+  width:8%;
+}
+.contactmain2-phone{
+
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  box-shadow: 0px 5px 5px rgb(112, 107, 107);
+  border-radius: 10px;
+  margin-left: 14%; margin-right: 14%; margin-top: 5%;
+  padding-bottom: 5%;
+}
+.headInfo-phone{
+  margin-top: 5%;
+}
+.headInfo-phone p{
+  margin:0%;
+}
+.contactmain1 h1{
+  font-size: 50px;
+}
+.category-menu{
+  font-size: 1.5vw;
+}
+
+.category-button{
+  background-color: #0698d6;
+  color:white;
+  padding:0.5%;
+  border-radius: 5px;
+  font-size:3vw;;
+}
+.button-placing{
+  padding-top:1%; padding-bottom:1%;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+}
+#ff{
+  margin-top:0%;
+}
+footer{
+  margin-top:5%;
+}
+@media screen and (max-width: 950px){
+  
+
+  .category-list{
+    gap:0%;
+  }
+  .category-menu{
+    font-size: 10px;
+  }
+  .contactmain4{
+    display:none;
+  }
+  .contactmain2{
+    display:none;
+  }
+  .mainProducts{
+    display:none;
+  }
+  .main3{
+    display:none;
+  }
+  .contactmain3{
+    display: none;
+  }
+  .aboutParaPhone{
+    margin-left: auto; margin-right: auto;
+    width:80%;
+    text-align: justify;
+  }
+  .aboutParaaPhone h2{
+    text-align: center;
+  }
+  .main3Phone{
+    width:100%;
+  }
+  .product-slidePhone{
+    width:70%;
+    margin-left: auto; margin-right: auto; margin-top:5%;
+    text-align: center;
+    border-style: solid;
+    border-width:2px;
+    border-color: gray;
+  }
+  .navbar{
+    font-size: 14px;
+  }
+  .insideImage h1{
+    font-size: 30px;
+  }
+  .insideImage p{
+    font-size: 12px;
+  }
+  .beforeFooter{
+    font-size:14px;
+  }
+  footer {
+    font-size: 12px;;
+  }
+  .credits{
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 450px){
+    .header2{
+      display:none;
+    }
+  }
+  @media screen and (max-width: 650px){
+    .last-test{
+      display:none;
+    }
+
+  }
+
+
+  @media screen and (max-width: 600px){
+    .navbar{
+      font-size: 10px;
+    }
+    .beforeFooter{
+      font-size:9px;
+      
+    }
+  }
+  .insideImage h1{
+    font-size: 20px;
+  }
+  .mainProductsPhone{
+    text-align: center;
+
+  }
+  .mainProductsPhone h2{
+    font-size:20px;
+  }
+  .mainProductsPhone p{
+    font-size: 10px;
+  }
+
+  .timeline-item-mobile{
+    font-size: medium;
+  }
+
+}
+@media screen and (min-width: 650px){
+  .button-placing{
+    display:none;
+  }
+  }
+@media screen and (min-width: 950px){
+  .mainProductsPhone{
+    display:none;
+  }
+  .contactmain3-phone{
+    display:none;
+  }
+  .product-slidePhone{
+    display:none;
+  }
+  .main3Phone{
+    display:none;
+  }
+
+  .contactmain2-phone{
+    display: none;
+  }
+  .contactmain4-phone{
+    display:none;
+  }
+
+}
+@media screen and (min-width: 450px){
+  .mobile-header{
+    display:none;
+  }
+  .mobile-footer{
+    display:none;
+  }
+}
+@media screen and (max-width: 450px){
+  .footer1{
+    display:none;
+
+  }
+  .footer2{
+    display:none;
+  }
+  .beforeFooter{
+    display:none;
+  }
+  footer{
+    display: flex;
+  }
+}
+@media screen and (max-width: 1500px){
+  .history{
+    display:none;
+  }
+  .mobile-history h3{
+    color:#0698d6;
+  }
+  .timeline-item-mobile{
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:80%;
+    margin-left: auto; margin-right: auto; margin-top:10%
+  }
+  
+  .sewLogo{
+    margin-left: auto; margin-right: auto;
+  }
+  .aboutSew{
+    display: none;
+  }
+  .aboutSew-phone p{
+    font-size: medium;
+    text-align: justify;
+  }
+  .aboutSew-phone img{
+    display: block;
+    margin-left:auto;margin-right: auto;
+    width: 30%;
+  }
+  .aboutSew-phone {
+    background-color: #f8f8f8;
+    margin-left: 8%; margin-right: 8%; margin-top: 5%; margin-bottom: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .aboutSew-phone h2{
+    text-align: center;
+    font-size: medium;
+  }
+  @media screen and (max-width: 1050px){
+    .allHeadInfo{
+      font-size: medium;
+    }
+    .category-menu{
+      font-size: 1.5vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1500px){
+  .mobile-history{
+    display:none;
+  }
+  .aboutSew-phone{
+    display:none;
+  }
+}
+
+

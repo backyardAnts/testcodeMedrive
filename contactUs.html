@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d77bc12c44.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+</head>
+<body>
+    <script src="./assets/js/main.js"></script>
+    <header>
+        <section class = "header2">
+            <img class = "headLogo" src = "./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+            <ul class = "navbar">
+                <li><a href="./contactUs.html">Contact Us</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./index.html">Home</a></li>
+              </ul>
+        </section>
+        <section class ="mobile-header">
+          <img class = "header-img" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+          <img onclick = 'menuAppear()' class = "toggle" src = "./assets/images/togglemenu.png">
+
+      </section>
+    </header>
+    <main>
+        <section class = "contactmain1">
+            <img class = "introImg" src = "./assets/images/360_F_337963325_EJuPjWslX3vAFxJ59L3y1cm6IsSfo07s.jpg">
+            <div class = "insideImage">
+                    <h1>For any inquiries, we're here to assist you
+                        </h1>
+
+        </section>
+        <section class = "contactmain2">
+            <h2>Headquarters</h2>
+            <div class = "allHeadInfo">
+                <div class = "headInfo">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Acar Group Building, Dahr El Jamal Street, <br>
+                    SIN-EL-FIL, Industrial Zone, Metn, LEBANON
+                    </p>
+                </div>
+                <div class = "headInfo">
+                <i class="fa-solid fa-phone"></i>
+                <p>+961 1 494786| +961 1 494971<br>+961 1 498272| +961 1 510532</p>
+                </div>
+                <div class = "headInfo" >
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@medrives.com</p>
+                </div>
+            </div>
+        </section>
+        <section class = "contactmain2-phone">
+            <h2>Headquarters</h2>
+            <div class = "allHeadInfo-phone">
+                <div class = "headInfo-phone">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Acar Group Building, Dahr El Jamal Street, <br>
+                    SIN-EL-FIL, Industrial Zone, Metn, LEBANON
+                    </p>
+                </div>
+                <div class = "headInfo-phone">
+                <i class="fa-solid fa-phone"></i>
+                <p>+961 1 494786| +961 1 494971<br>+961 1 498272| +961 1 510532</p>
+                </div>
+                <div class = "headInfo-phone" >
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@medrives.com</p>
+                </div>
+            </div>
+        </section>
+        <section class = "contactmain3">
+            <div  class="userInput">
+                <img src="./assets/images/Untitled design.png">
+
+
+            <form action="insertData.php" method="post">
+
+    <div class="informations">
+        <div class = "nameEmail">
+            <input  class = "info" name="name" type="text" placeholder="Your Name" required>
+            <input class = "info" name="email" type="email" placeholder="Your Email" required>
+        </div>
+        <div>
+            <input class="Subject" name="subject" type="text" placeholder="Subject (Optional)">
+        </div>
+        <div>
+            <input class="message" name="message" type="text" placeholder="Your Message*" required>
+        </div>
+        <div class = "submitPhrase">
+            <p>* Note: Your Email will be kept safe and sound</p>
+            <button type="submit" value="Submit">Submit</button>
+        </div>
+    </div>
+</form>
+            </div>
+
+        </section>
+        <section class = "contactmain3-phone">
+            <form action="insertData.php" method="post">
+    <div class="informations">
+        <div class = "nameEmail">
+            <input  class = "info" name="name" type="text" placeholder="Your Name" required>
+            <input class = "info" name="email" type="email" placeholder="Your Email" required>
+        </div>
+        <div>
+            <input class="Subject" name="subject" type="text" placeholder="Subject (Optional)">
+        </div>
+        <div>
+            <input class="message" name="message" type="text" placeholder="Your Message*" required>
+        </div>
+        <div class = "submitPhrase">
+            <p>* Note: Your Email will be kept safe and sound</p>
+            <button type="submit" value="Submit">Submit</button>
+        </div>
+    </div>
+</form>
+            </div>
+
+        </section>
+        <section class = "contactmain4">
+            <div>
+                <img src="./assets/images/nameplate-300x150.png">
+                <p>If you require to replace a Gear Motor, fill the Nr. found on the plate of your device in the appropriate field with your personal info, and our consultants will call you shortly.
+                </p>
+            </div>
+            <form class = "productInput">
+                <div class = "nameEmail">
+                    <input  class = "info" name="name" type="text" placeholder="Your Name" required>
+                    <input class = "info" name="email" type="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <input class="Subject" name="subject" type="text" placeholder="Subject (Optional)">
+                </div>
+                <div>
+                    <input class="message" name="message" type="text" placeholder="Your Message*" required>
+                </div>
+                <div class = "submitPhrase">
+                    <p>* Note: Your Email will be kept safe and sound</p>
+                    <button id = "final-edit" type="submit" value="Submit">Submit</button>
+                </div>
+            </div>
+            </form>
+        </section>
+        <section class = "contactmain4-phone">
+            <form class = "productInput">
+                <div class = "nameEmail">
+                    <input  class = "info" name="name" type="text" placeholder="Your Name" required>
+                    <input class = "info" name="email" type="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <input class="Subject" name="subject" type="text" placeholder="Subject (Optional)">
+                </div>
+                <div>
+                    <input class="message" name="message" type="text" placeholder="Your Message*" required>
+                </div>
+                <div class = "submitPhrase">
+                    <p>* Note: Your Email will be kept safe and sound</p>
+                    <button id = "final-edit" type="submit" value="Submit">Submit</button>
+                </div>
+            </div>
+            </form>
+        </section>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d828.0652330989143!2d35.532863829189104!3d33.8829331121471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUyJzU4LjYiTiAzNcKwMzInMDAuMyJF!5e0!3m2!1sen!2slb!4v1573126503619!5m2!1sen!2slb" width="600" height="450" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""></iframe>
+        </section>
+    </main>
+    
+<footer id="ff">
+    <section class="footer1">
+        <img class="footerLogo" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+        <div style="margin-top:4%;">
+            <p style="font-weight: bold;">Delivering Excellence since 1924.</p>
+            <p>SEW-EURODRIVE: Leading Drive Solutions of the world.</p>
+        </div>
+    </section>
+    <section class="footer2">
+        <div class="footerInfo">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Acar Group Building, Dahr El Jamal Street, <br>SIN EL-FIL, Industrial Zone, Metn, LEBANON</p>
+        </div>
+        <div class="footerInfo">
+            <i class="fa-solid fa-phone"></i>
+            <p>+961 1 494786 | +961 1 494971 <br>+961 1 498272 | +961 1 510532</p>
+        </div>
+    </section>
+    <section class="mobile-footer">
+        <img class="footerLogo" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+        <div style="margin-top:4%;">
+            <p style="font-weight: bold;">Delivering Excellence since 1924.</p>
+            <p>SEW-EURODRIVE: Leading Drive Solutions of the world.</p>
+        </div>
+        <div class="footerInfo">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Acar Group Building, Dahr El Jamal Street, <br>SIN EL-FIL, Industrial Zone, Metn, LEBANON</p>
+        </div>
+        <div class="footerInfo">
+            <i class="fa-solid fa-phone"></i>
+            <p>+961 1 494786 | +961 1 494971 <br>+961 1 498272 | +961 1 510532</p>
+        </div>
+    </section>
+  </footer>
+  
+  <section class="credits">
+    <p>© 2019. Developed by Anthony Labaki</p>
+  </section>
+  
+  <section class="mobile-menu">
+    <section>
+        <div class="mobile-menu-header">
+            <img class="toggle-menu-logo" src="./assets/images/LOGOMEDRIVESFINAL-1-300x100-2-300x100.png">
+            <a onclick="menuRemoved()"><img class="closing" src="./assets/images/closeMenu.png"></a>
+        </div>
+    </section>
+    <section>
+        <ul class="menu-cat">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./aboutus.html">Contact Us</a></li>
+            <li><a href="./contactUs.html">About Us</a></li>
+        </ul>
+    </section>
+  </section>
+  </body>
+  </html>
+  
